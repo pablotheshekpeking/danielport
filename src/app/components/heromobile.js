@@ -30,38 +30,38 @@ export default function HeroMobile() {
 
             {/** boxes */}
             <Box
-      h={'auto'}
-      display={'flex'}
-      overflowX={'scroll'} // Ensures horizontal scrolling
-      gap={'20px'}
-      pt={'86px'}
-      maxW={'100%'}
-      pb={'20px'} // Optional: Adds padding to the bottom for spacing
-    >
-      <Image
-        src={'/juicy.png'}
-        alt="Juicy Image"
-        boxSize="300px" // Fixed size for each image
-        objectFit="cover"
-        transition="opacity 0.3s ease"
-      />
+                h={'auto'}
+                display={'flex'}
+                overflowX={'scroll'} // Ensures horizontal scrolling
+                gap={'20px'}
+                pt={'86px'}
+                maxW={'100%'}
+                pb={'20px'} // Optional: Adds padding to the bottom for spacing
+            >
+                <Image
+                    src={'/juicy.png'}
+                    alt="Juicy Image"
+                    boxSize="300px" // Fixed size for each image
+                    objectFit="cover"
+                    transition="opacity 0.3s ease"
+                />
 
-      <Image
-        src={'/bel.png'}
-        alt="Bel Image"
-        boxSize="300px" // Fixed size for each image
-        objectFit="cover"
-        transition="opacity 0.3s ease"
-      />
+                <Image
+                    src={'/bel.png'}
+                    alt="Bel Image"
+                    boxSize="300px" // Fixed size for each image
+                    objectFit="cover"
+                    transition="opacity 0.3s ease"
+                />
 
-      <Image
-        src={'/mana.png'}
-        alt="Mana Image"
-        boxSize="300px" // Fixed size for each image
-        objectFit="cover"
-        transition="opacity 0.3s ease"
-      />
-    </Box>
+                <Image
+                    src={'/mana.png'}
+                    alt="Mana Image"
+                    boxSize="300px" // Fixed size for each image
+                    objectFit="cover"
+                    transition="opacity 0.3s ease"
+                />
+            </Box>
         </Box>
     )
 }

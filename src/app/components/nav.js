@@ -10,7 +10,7 @@ export default function Nav(){
         w={'full'}
         display={'flex'}
         gap={'64px'}
-        fontSize={'18px'}
+        fontSize={['12px', '12px', '18px', '18px']}
         pt={'56px'}
         justifyContent={['center', 'center', 'right', 'right']}
         pb={'40px'}
