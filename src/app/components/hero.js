@@ -5,6 +5,7 @@ import TypewriterEffect from "./typing"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 import HoverBox from "./hoverBox"
+import TypewriterEffectEmoji from "./typingemoji"
 
 export default function HeroDesktop() {
     const [isHovered, setIsHovered] = useState(false)
@@ -18,7 +19,7 @@ export default function HeroDesktop() {
         >
             <Nav />
             <Heading
-                fontSize={['24px', '24px', '96px', '96px']}
+                fontSize={['20px', '20px', '56px', '56px']}
                 fontWeight={500}
             >
                 DANIEL.O.JOHNSON
@@ -26,11 +27,11 @@ export default function HeroDesktop() {
 
             <Text
                 fontWeight={400}
-                fontSize={['12px', '12px', '24px', '24px']}
+                fontSize={['12px', '12px', '14px', '14px']}
                 display={'flex'}
                 gap={'4px'}
             >
-                😡 I am a  <TypewriterEffect />
+                <TypewriterEffectEmoji /> I am a  <TypewriterEffect />
 
             </Text>
 
@@ -40,7 +41,7 @@ export default function HeroDesktop() {
                 display={['none', 'none', 'flex', 'flex']}
                 justifyContent={'center'}
                 gap={'20px'}
-                pt={'86px'}
+                pt={'40px'}
             >
                 <HoverBox
                     imageSrc="Juice.png"

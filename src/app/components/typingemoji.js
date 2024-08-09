@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { Text } from '@chakra-ui/react';
 
-const TypewriterEffect = () => {
+const TypewriterEffectEmoji = () => {
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -37,8 +37,7 @@ const TypewriterEffect = () => {
   return (
     <Text 
       ref={textRef}
-      data-typed-items="Digital Product Designer" 
-      textDecoration={'underline'} 
+      data-typed-items="😡, 😁, 🥵, 😈, 👺, 👾, 🇳🇬"
       color={'white'} 
       fontWeight={400} 
       fontSize={['12px', '12px', '14px', '14px']}
@@ -47,4 +46,4 @@ const TypewriterEffect = () => {
   );
 };
 
-export default TypewriterEffect;
+export default TypewriterEffectEmoji;

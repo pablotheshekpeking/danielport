@@ -1,6 +1,7 @@
 'use client'
 import { Box, Heading, Text, Image } from "@chakra-ui/react"
 import TypewriterEffect from "./typing"
+import TypewriterEffectEmoji from "./typingemoji"
 
 export default function HeroMobile() {
     return (
@@ -11,8 +12,8 @@ export default function HeroMobile() {
             flexDirection={'column'}
         >
             <Heading
-                pt={'86px'}
-                fontSize={['24px', '24px', '96px', '96px']}
+                pt={'32px'}
+                fontSize={'32px'}
                 fontWeight={500}
             >
                 DANIEL.O.JOHNSON
@@ -24,7 +25,7 @@ export default function HeroMobile() {
                 display={'flex'}
                 gap={'4px'}
             >
-                😡 I am a  <TypewriterEffect />
+                <TypewriterEffectEmoji /> I am a  <TypewriterEffect />
 
             </Text>
 
@@ -34,7 +35,7 @@ export default function HeroMobile() {
                 display={'flex'}
                 overflowX={'scroll'} // Ensures horizontal scrolling
                 gap={'20px'}
-                pt={'86px'}
+                pt={'40px'}
                 maxW={'100%'}
                 pb={'20px'} // Optional: Adds padding to the bottom for spacing
             >

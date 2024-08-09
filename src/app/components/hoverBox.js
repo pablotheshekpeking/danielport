@@ -7,7 +7,7 @@ const HoverBox = ({ imageSrc, hoverImageSrc, backgroundImage, title, position, d
   return (
     <Box
       w="448px"
-      h="400px"
+      h="520px"
       bg={backgroundImage ? `url(${backgroundImage})` : '#151515'}
       bgSize="cover"
       display="flex"
@@ -20,7 +20,7 @@ const HoverBox = ({ imageSrc, hoverImageSrc, backgroundImage, title, position, d
       position="relative"
       overflow="hidden"
       transition="background-color 0.3s ease, transform 0.3s ease"
-      transform={isHovered ? 'translateY(-50px)' : 'translateY(0)'}
+      transform={isHovered ? 'translateY(-20px)' : 'translateY(0)'}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       cursor="pointer"
@@ -36,11 +36,11 @@ const HoverBox = ({ imageSrc, hoverImageSrc, backgroundImage, title, position, d
       ) : (
         <>
           <Image
+          pt={'60px'}
             src={imageSrc}
             alt="Main Image"
-            boxSize="64px"
+            boxSize="140px"
             objectFit="contain"
-            mb="16px"
             transition="opacity 0.3s ease"
           />
           <Box
@@ -48,6 +48,9 @@ const HoverBox = ({ imageSrc, hoverImageSrc, backgroundImage, title, position, d
             flexDirection="row"
             w="100%"
             alignItems="center"
+            p={'14px'}
+            pt={'100px'}
+            justifyContent={'flex-end'}
           >
             <Box
               display="flex"
