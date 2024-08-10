@@ -40,7 +40,7 @@ const TypewriterEffectEmoji = () => {
       data-typed-items="😡, 😁, 🥵, 😈, 👺, 👾, 🇳🇬"
       color={'white'} 
       fontWeight={400} 
-      fontSize={['12px', '12px', '14px', '14px']}
+      fontSize={['12px', '12px', '16px', '14px']}
     >
     </Text>
   );

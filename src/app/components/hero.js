@@ -6,13 +6,14 @@ import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 import HoverBox from "./hoverBox"
 import TypewriterEffectEmoji from "./typingemoji"
+import ReadyDesktop from "./ready"
 
 export default function HeroDesktop() {
     const [isHovered, setIsHovered] = useState(false)
     return (
         <Box
             w={'full'}
-            h={'100vh'}
+            h={'auto'}
             display={'flex'}
             justifyContent={'center'}
             flexDirection={'column'}
@@ -67,6 +68,9 @@ export default function HeroDesktop() {
                     hoverImageSrc="/mana.png"
                 />
             </Box>
+
+            {/** ready */}
+            <ReadyDesktop />
         </Box>
     )
 }

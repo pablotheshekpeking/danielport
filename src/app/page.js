@@ -4,26 +4,38 @@ import { Box } from "@chakra-ui/react";
 import Nav from "./components/nav";
 import HeroDesktop from "./components/hero";
 import HeroMobile from "./components/heromobile";
+import ReadyDesktop from "./components/ready";
+import About from "./components/about";
+import Skill from "./components/skill";
 
 export default function Home() {
   return (
     <Box
       w={'full'}
-      h={'100vh'}
+      h={'auto'}
       bg={'black'}
       px={['12px', '12px', '64px', '64px']}
       color={'white'}
+      scrollBehavior={'smooth'}
+      display={'flex'}
+      flexDirection={'column'}
+      gap={'48px'}
     >
-      <Box display={['flex', 'flex', 'none', 'none']}>
+      <Box display={['flex', 'flex', 'flex', 'none']}>
         <Nav />
       </Box>
 
-      <Box display={['none', 'none', 'flex', 'flex']}>
+      <Box display={['none', 'none', 'none', 'flex']} id="work">
         <HeroDesktop />
       </Box>
 
-      <Box display={['flex', 'flex', 'none', 'none']}>
+      <Box display={['flex', 'flex', 'flex', 'none']} id="work">
         <HeroMobile />
+      </Box>
+
+      <Box id="about" display={'flex'} flexDirection={'column'} gap={'48px'}>
+        <About />
+        <Skill />
       </Box>
     </Box>
   );
