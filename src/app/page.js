@@ -7,6 +7,8 @@ import HeroMobile from "./components/heromobile";
 import ReadyDesktop from "./components/ready";
 import About from "./components/about";
 import Skill from "./components/skill";
+import Approach from "./components/approach";
+import Emploment from "./components/employment";
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
       display={'flex'}
       flexDirection={'column'}
       gap={'48px'}
+      fontFamily="Work Sans"
     >
       <Box display={['flex', 'flex', 'flex', 'none']}>
         <Nav />
@@ -36,6 +39,8 @@ export default function Home() {
       <Box id="about" display={'flex'} flexDirection={'column'} gap={'48px'}>
         <About />
         <Skill />
+        <Approach />
+        <Emploment />
       </Box>
     </Box>
   );
